@@ -8,16 +8,18 @@ import { formatNumber } from '@/lib/utils'
 import PriceInfoCard from '@/components/PriceInfoCard'
 import ProductCard from '@/components/ProductCard'
 import Modal from '@/components/Modal'
+
 type Props ={
     params: {id: string}
 }
 
-const ProductDetails = async ({ params: {id} }: Props) => {
-    const product: Product   = await getProductById(id);
+const ProductDetails = async ({ params }: Props) => {
+  const { id } = params;
 
-    if(!product) redirect('/')
+  const product: Product = await getProductById(id);
+  if (!product) redirect('/');
 
-        const similarProducts = await getSimilarProducts(id);
+  const similarProducts = await getSimilarProducts(id);
 
   return (
     <div className='flex flex-col gap-16 flex-wrap px-6 md:px-20 py-24'>
