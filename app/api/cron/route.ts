@@ -57,7 +57,7 @@ export async function GET(request: Request) {
 
           return updatedProduct;
         } catch (err: any) {
-          console.error(`Error processing product [${currentProduct.url}]:`, err.message);
+          console.error(`Error processing product [${currentProduct.url}]: Failed to scrape the product : ${err.message}`);
           return null; // Skip failed product
         }
       })
