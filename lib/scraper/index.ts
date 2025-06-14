@@ -73,7 +73,7 @@ import { Average } from "next/font/google";
         description,
         lowestPrice: Number(currentPrice)||Number(originalPrice),
         highestPrice: Number(originalPrice) ||Number(currentPrice),
-        getAveragePrice:Number(currentPrice) || Number(originalPrice),
+        averagePrice:Number(currentPrice) || Number(originalPrice),
     }
     return data;
     } catch(error: any) {
