@@ -10,8 +10,14 @@ import ProductCard from '@/components/ProductCard'
 import Modal from '@/components/Modal'
 
 
-const ProductDetails = async (props: { params: { id: string } }) => {
-  const id = props.params.id; // ✅ use like this
+interface PageProps {
+  params: {
+    id: string;
+  };
+}
+
+const ProductDetails = async ({ params }: PageProps) => {
+  const id = params.id;
 
   const product: Product = await getProductById(id);
   if (!product) redirect('/');
