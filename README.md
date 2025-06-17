@@ -34,6 +34,3 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-
-
-curl https://api.brightdata.com/request -H "Content-Type: application/json" -H "Authorization: Bearer b367a8d322e4e374ff57e478d549cd9f818ab2bdf2692ed314e0c99ab4cf5a69" -d "{\"zone\": \"pricewise\",\"url\": \"https://geo.brdtest.com/welcome.txt?product=unlocker&method=api\", \"format\": \"raw\"}"

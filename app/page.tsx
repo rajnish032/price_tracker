@@ -33,7 +33,7 @@ const Home = async () => {
         <section className='flex flex-col gap-10 px-6 md:px-20 py-24'>
           <h2 className='text-gray-700 text-[32px] font-semibold'>Trending</h2>
 
-          <div className='flex flex-wrap gap-x-35 gap-y-16'>
+          <div className='flex flex-wrap gap-x-32 gap-y-16'>
            { allProducts?.map((product) => (
               <ProductCard key={product._id} product={product} />
             ))}
